@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #6f7e7c;
+    background-size: cover;
+    overflow-x: hidden;
+}
+nav {
+    background-color: #272828;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    /* padding-left: 22px; */
+    display: flex;
+}
+li{
+    color: #DCD7C9;
+    padding: 20px;
+    margin-left: 12px;
+    margin-right: 12px;
+    list-style-type: none;
+}
+a{
+    color: #DCD7C9;
+    text-decoration: none;
+}
+
+.heading{
+    margin-top: 100px;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    padding-top: 12%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+   .a{
+    /* margin-top: 6%; */
+  }
+.program{
+    background-color: #272828;
+    backdrop-filter: blur(6px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    text-align: center;
+    height: 100px;
+    width: 260px;
+    color: #DCD7C9;
+    font-size: 22px;
+    margin: 16px;
+}
+.programContainer{
+    background-color: #3F4E4F;
+    backdrop-filter: blur(6px);
+    border-radius: 1pc;
+    /* display: flex;  */
+    align-items: center;
+    /* justify-content: center;
+    /* padding: 2%; */
+    text-align: center;
+    /* height: 80%; */
+    width: 50%;
+    color: #F7F6E7;
+    font-size: 2em;
+    margin: 12px;
+}
+button{
+    background-color: #272828;
+    color:#DCD7C9;
+    font-size: 22px;
+    width: 180px ;
+    height: 60px;
+}
+input{
+    text-align: center;
+     font-size: 22px;
+     font-weight:bolder;
+     color: #2D2424;
+    width: 150px;
+    height: 50px;
+}
+.input{
+   
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+}
+.result{
+    background-color: #E7E6E1;
+    color: #2D2424;
+    padding: 2%;
+    margin-left: 20%;
+    margin-right: 20%;
+    border: solid 1px #2D2424;
+    border-radius: 6px;
+    box-shadow: inset #b9b8b6 2px 2px;
+    /* height: max-content;
+    width: max-content; */
+}
+
+ a:hover{
+    color: #A27B5C;
+}
+.program:hover{
+    background-color: #494949c2;
+    color: #DCD7C9;
+    scale: 1.09;
+    transition: .3s;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voting Eligibility Checker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <a href="index.html">
+            <li>
+                Back
+            </li>
+        </a>
+    </nav>
+    <div class="container">
+        <div class="programContainer">
+            <br>
+            <h2>Program 6</h2>
+            </br>
+            <label for="name">Enter Name</label>
+            <input type="text" id="name" /><br /></br></br>
+
+            <label for="age">Enter Age</label>
+            <input type="number" id="age" /></br></br></br>
+
+            <button onclick="checkVotingEligibility()">Check Eligibility</button></br></br></br>
+                <p id='result'> Result:</p>
+        </br>
+        </div>
+
+
+        <script>
+            function checkVotingEligibility() {
+                var name = document.getElementById('name').value;
+                var age = parseInt(document.getElementById('age').value);
+
+                if (isNaN(age)) {
+                    document.getElementById('result').innerHTML = 'Invalid age input. Please enter a valid age.';
+                } else {
+                    if (age >= 18 && age < 100) {
+                        document.getElementById('result').innerHTML = `Hello ${name}, you are allowed to vote!`;
+                    } else if (age < 18) {
+                        document.getElementById('result').innerHTML = 'Sorry, you are not ready to vote.';
+                    } else {
+                        document.getElementById('result').innerHTML = `Sorry ${name}, you are not allowed to vote because you are 100 years old or older.`;
+                    }
+                }
+            }
+        </script>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program 7</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <a href="index.html">
+            <li>
+                Back
+            </li>
+        </a>
+    </nav>
+    <div class="container">
+        <div class="programContainer">
+            <br>
+            <h2>Program 6</h2>
+            </br>
+            <label for="num1">ENTER FIRST</label></br></br>
+            <input type="number" id='num1' /><br /></br></br>
+
+            <label for="num2">ENTER SECOND</label></br></br>
+            <input type="number" id='num2' /></br></br></br>
+
+            <button onclick="calculate()">CHECK</button></br></br></br>
+            <h2>
+                <p id='result'> Result:</p>
+            </h2>
+        </br>
+        </div>
+
+        <script>
+            function calculate() {
+                var num1 = parseFloat(document.getElementById('num1').value);
+                var num2 = parseFloat(document.getElementById('num2').value);
+                var resultElement = document.getElementById('result');
+                var answer;
+
+                if (num1 === num2) {
+                    answer = num1 - num2;
+                } else if (num1 > num2) {
+                    answer = num1 + num2;
+                } else {
+                    answer = num1 * num2;
+                }
+
+                resultElement.innerHTML = 'ANSWER: ' + answer;
+            }
+        </script>
+</body>
+
+</html>
